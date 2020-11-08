@@ -45,7 +45,7 @@
         </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-jackson</artifactId>
+            <artifactId>jjwt-jackson</artifactId> <!-- or jjwt-gson if Gson is preferred -->
             <version>0.11.2</version>
             <scope>runtime</scope>
         </dependency>
@@ -82,26 +82,6 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <version>5.2.3.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>2.2.6.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>5.2.5.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>5.2.5.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>2.2.3</version>
         </dependency>
 
     </dependencies>
