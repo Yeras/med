@@ -1,6 +1,5 @@
 package kz.med.controller;
 
-
 import kz.med.model.User;
 import kz.med.model.UserVerificationToken;
 import kz.med.repository.RegistrationRepository;
