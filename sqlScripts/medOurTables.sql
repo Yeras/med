@@ -1,0 +1,3 @@
+SELECT *
+  FROM PATIENT_APPOINTMENT pa
+WHERE pa.doctor = :id;
