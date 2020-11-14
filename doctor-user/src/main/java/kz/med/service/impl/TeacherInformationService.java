@@ -22,4 +22,9 @@ public class TeacherInformationService implements ITeacherInformationService {
         return teacherInformationRepository.findByUserId(userId);
     }
 
+    @Override
+    public TeacherInformation findAll() {
+        return null;
+    }
+
 }

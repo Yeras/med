@@ -7,4 +7,6 @@ public interface ITeacherInformationService {
 
     TeacherInformation findByUserId(int userId);
 
+    TeacherInformation findAll();
+
 }
