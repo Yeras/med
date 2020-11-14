@@ -4,9 +4,6 @@ id, date, idAppointment (Foreign key)
 2) Таблица проверки вызыва расписании(table - check schedule)
 id, idShedule
 
-
-Aspirin yshu kerek, 1, 3
-
 1, today, 1
 2, yerterday, 1
 3, after 2 days, 1
@@ -17,13 +14,15 @@ sqlscripts скинуть
 
 table >> registration_user(id) FK patient_appointment(doctor_id)
 
-
 //////////////EXAMPLE CREATE FOREIGN KEY
 ALTER TABLE child_table
 ADD CONSTRAINT constraint_fk
 FOREIGN KEY (c1)
 REFERENCES parent_table(p1)
-//////////////EXAMPLE
-
 
 модели, репозиториий, seq, service, таблицы 2
+
+Добавить 2 колонки в таблицу PATIENT_APPOINTMENT:
+doctor_id(int), app_create_date(Timestamp), и посмотреть какие еще колонки можно добавить.
+
+Посмотреть пример в NewsPublicationModel, NewsPublicationRepository, NewsPublicationService,
