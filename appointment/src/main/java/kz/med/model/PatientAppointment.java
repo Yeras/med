@@ -32,7 +32,7 @@ public class PatientAppointment {
     private Integer patientPhone;
 
     @Column(name = "patient_email")
-    private Integer patientEmail;
+    private String patientEmail;
 
     @Column(name = "another_email")
     private String anotherEmail;
@@ -57,4 +57,8 @@ public class PatientAppointment {
 
     @Column(name = "doctor_email")
     private String doctorEmail;
+
+    @Column(name = "doctor_id")
+    private Integer doctorId;
+
 }
