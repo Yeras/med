@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.mail.MessagingException;
+
 @RestController
 @RequestMapping("/patient/appointment")
 public class PatientAppointmentController {
@@ -18,6 +20,11 @@ public class PatientAppointmentController {
     @PostMapping()
     public PatientAppointment save(@RequestBody PatientAppointment patientAppointment) {
         return patientAppointmentService.saveAppoint(patientAppointment);
+    }
+
+    @PostMapping("/message")
+    public PatientAppointment sendMessage(@RequestBody PatientAppointment patientAppointment) throws MessagingException {
+        return patientAppointmentService.sendMessage(patientAppointment);
     }
 
 }

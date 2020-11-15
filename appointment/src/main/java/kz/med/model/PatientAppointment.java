@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -47,7 +48,7 @@ public class PatientAppointment {
     private Integer howManyTimesDay;
 
     @Column(name = "start_send_message")
-    private Timestamp startSendMessage;
+    private LocalDateTime startSendMessage;
 
     @Column(name = "doctor_phone_number")
     private Integer doctorPhoneNumber;
